@@ -1,0 +1,47 @@
+
+<main>
+   <h1 class="text-3xl -mt-4">Telecharger la liste d'absence</h1>
+
+    <button class="bg-green-500 p-3 rounded-lg text-xl hover:bg-green-700 mt-5" (click)="exportexcel()">Export to Excel</button>
+<div class="relative overflow-x-auto w-full  bg-white-700 shadow-md sm:rounded-lg mt-8 align-middle">
+   
+
+    <table id="data-table" class="w-full text-sm text-left  text-gray-500 dark:text-gray-400">
+        <thead class="text-x  text-gray-700 uppercase bg-gray-50 dark:bg-gray-700 dark:text-gray-400">
+            <tr>
+                <th scope="col" class="px-6 py-5">
+                    Matricule
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Nom
+                </th>
+                <th scope="col" class="px-6 py-3">
+                    Prenom
+                </th>
+                <th scope="col" class="px-5 py-3 text-center">
+                   Nombre  D'absence
+                   
+                </th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr class="bg-white border-b dark:bg-gray-800 dark:border-gray-700 hover:bg-gray-50 dark:hover:bg-gray-600" *ngFor="let dat of data">
+                <th scope="row" class="px-6 py-4 font-medium text-gray-900 whitespace-nowrap dark:text-white">
+                    {{dat.matricule}}
+                </th>
+                <td class="px-6 py-4">
+                    {{dat.nom}}
+                </td>
+                <td class="px-6 py-4">
+                    {{dat.Prenom}}
+                </td>
+                <td class="px-4 py-4 flex justify-center gap-7 items-center" >
+                     {{dat.nombreAb}}
+                </td>
+            </tr>
+
+
+        </tbody>
+    </table>
+</div> 
+</main>

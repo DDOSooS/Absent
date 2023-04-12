@@ -1,0 +1,47 @@
+<link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+    <div class="logo-container">
+        <button class="logo" (click)="toggleCollapse()"><img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Cadi_Ayyad_University_Logo.png" alt=""></button>
+        <div class="logo-text" @fadeInOut *ngIf="collapsed">FSSM</div>
+        <button class="btn-close text-2xl" @rotate *ngIf="collapsed" (click)="closeSidenav()">
+            <i class='bx bx-x text-2xl text-white'></i>
+        </button>
+    </div>
+
+    <ul class="sidenav-nav">
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" 
+                routerLink="dashboard"
+                routerLinkActive="active"
+            >
+               <i class='fal fa-home text-black  text-center text-2xl pl-2 ' ></i>
+                <span class="sidenav-link-text text-left text-black" @fadeInOut *ngIf="collapsed">
+                  <a routerLink="dashboard">dashboard</a>
+                </span>
+            </a>
+        </li>
+
+        <li class="sidenav-nav-item" >
+            <a class="sidenav-nav-link" routerLink="settings"
+                routerLinkActive="active"
+            >
+               <i class='bx bxs-cog text-black text-center text-2xl pl-2 ' ></i>
+                <span class="sidenav-link-text text-left text-black" @fadeInOut *ngIf="collapsed">
+                  Settings
+                </span>
+            </a>
+        </li>
+        <li class="sidenav-nav-item"  >
+            <a class="sidenav-nav-link" 
+                routerLink="login"
+            >
+               <i class='bx bx-log-in text-black  text-center text-2xl pl-2' ></i>
+                <span class="sidenav-link-text text-left text-black" @fadeInOut *ngIf="collapsed">
+                  Logout
+                </span>
+            </a>
+        </li>
+
+    </ul> 
+</div>
