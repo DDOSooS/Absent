@@ -1,0 +1,225 @@
+export const Database=[
+    {
+        "cni":"u2016617",
+        "cne":"M137456807",
+        "nom":"gherghouch",
+        "prenom":"abdessalam",
+        "email":"abde.gher@gmail.com",
+        "password":"12345678",
+        "formation":"tec-web",
+        "module":[ {    "id":"1",
+                        "nomModule":"php",
+                        "total":4,
+                        "professeur":"ahmed",
+                        "formation":"",
+                        "list":[ 
+                            {
+                                "date":"2023-01-02",
+                                "satatus": true
+                            },
+                            {
+                                "date":"2023-02-12",
+                                "satatus": true
+                            },
+                            {
+                                "date":"2023-03-02",
+                                "satatus": true
+                            },
+                            {
+                                "date":"2023-01-04",
+                                "satatus": false
+                            },
+                        ]
+                    },
+                    { 
+                        "id":"2",
+                        "nomModule":"Systeme d'information",
+                        "total":1,
+                        "professeur":"tarik",
+                        "list":[ 
+                            {
+                                "date":"2023-01-02",
+                                "satatus": true
+                            },
+
+                        ]
+                    },
+                    {   
+                        "id":"3",
+                        "nomModule":"java",
+                        "total":0,
+                        "professeur":"issam",
+
+                        "list":[ 
+                        ]
+                    },
+                    { 
+                        "id":"4",
+                        "nomModule":"gestion du projet",
+                        "total":2,
+                        "professeur":"hajar",
+                        "list":[ 
+                            {
+                                "date":"2023-01-02",
+                                "satatus": false
+                            },
+                            {
+                                "date":"2023-02-12",
+                                "satatus": true
+                            },
+                        ]
+                    },
+                ],
+    "role":1
+    },
+    {
+        "cni":"u277016617",
+        "cne":"C324",
+        "nom":"ahmed",
+        "prenom":"ahmadi",
+        "email":"ahmedi@gmail.com",
+        "password":"1234567811",
+
+        "module":[ { 
+                        "id":1,
+                        "nomModule":"php-Avance",
+                        "total":1,       
+                        "formation":"Tec-Web",
+                        "list":[ 
+                            {
+                                "cne":"M137456807",
+                                "nom":"Gherghouch",
+                                "prenom":"rachide"
+                            },
+                            {
+                                "cne":"M162763354",
+                                "nom":"ahmadi",
+                                "prenom":"Naim"
+                            },
+                            {
+                                "cne":"M87873843 ",
+                                "nom":"alaoui",
+                                "prenom":"mariem"
+                            },
+                            {
+                                "cne":"M156845607",
+                                "nom":"Gherghouch",
+                                "prenom":"imade"
+                            },
+                            {
+                                "cne":"M15800007",
+                                "nom":"bensalm",
+                                "prenom":"rida"
+                            },
+                            {
+                                "cne":"C1356348754",
+                                "nom":"hassani",
+                                "prenom":"Abdellatif"
+                            },
+                            {
+                                "cne":"G568078964",
+                                "nom":"bericho",
+                                "prenom":"wiam"
+                            },
+                            {
+                                "cne":"K138374038",
+                                "nom":"Amokran",
+                                "prenom":"Ayman"
+                            },
+                        ]
+                    },{ 
+                        "id":2,
+                        "nomModule":"alogirithmic",
+                        "total":1,       
+                        "formation":"SMI",
+                        "list":[ 
+                            {
+                                "cne":"D17833489",
+                                "nom":"elalaoui",
+                                "prenom":"hassan"
+                            },
+                            {
+                                "cne":"F13456807",
+                                "nom":"Oumahno",
+                                "prenom":"rachida"
+                            },
+                            {
+                                "cne":"Q12456807",
+                                "nom":"enaimi",
+                                "prenom":"yassir"
+                            },
+                            {
+                                "cne":"TL86356807",
+                                "nom":"El haouti",
+                                "prenom":"othamt"
+                            },
+                            {
+                                "cne":"C327456807",
+                                "nom":"El haoudar",
+                                "prenom":"Hamza"
+                            },
+                            {
+                                "cne":"F00779342",
+                                "nom":"Saidi",
+                                "prenom":"abdellatif"
+                            },
+                            {
+                                "cne":"L89356807",
+                                "nom":"Baghdad",
+                                "prenom":"Bounjah"
+                            },
+                            {
+                                "cne":"M130086807",
+                                "nom":"ezaidi",
+                                "prenom":"ali"
+                            },
+                            {
+                                "cne":"M37006807",
+                                "nom":"elkaoutari",
+                                "prenom":"Hajr"
+                            },
+                            {
+                                "cne":"B12453001",
+                                "nom":"Essmahi",
+                                "prenom":"Imane"
+                            },
+                            {
+                                "cne":"P10454232",
+                                "nom":"Laghmouci",
+                                "prenom":"amine"
+                            },
+                            {
+                                "cne":"M137456807",
+                                "nom":"Gherghouch",
+                                "prenom":"abdessalam"
+                            },
+                            {
+                                "cne":"M137456807",
+                                "nom":"Gherghouch",
+                                "prenom":"abdessalam"
+                            },
+                        ]
+                    },
+                ],
+    "role":2
+    },{
+        "cni":"u216617",
+        "cne":"C324",
+        "nom":"ismaili",
+        "prenom":"ismail",
+        "email":"admin@gmail.com",
+        "password":"adminadmin",
+
+        "module":[ { 
+                        "id":1,
+                        "nomModule":"php-Avance",
+                        "total":1,       
+                        "formation":"Tec-Web",
+                        "list":[ 
+                           
+                        ]
+                    },
+                ],
+    "role":3
+    },
+]

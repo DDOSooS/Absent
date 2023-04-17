@@ -60,6 +60,10 @@
     width: 16.5625rem;
 }
 
+.sidenav-display{
+    display: none;
+}
+
 .sidenav-nav {
     list-style: none;
     padding: 0.938rem;

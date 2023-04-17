@@ -1,4 +1,4 @@
-main {
+.box {
     position: relative;
     font-family: 'Roboto', sans-serif;
     margin-top: 4rem;
@@ -6,4 +6,51 @@ main {
     align-items: center;
     gap: 5rem;
     
+}
+.Card{
+     display: grid;
+    border-radius: .5rem;
+    background-color: #fff;
+    margin: 1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem #e6edef;
+    width:  40%;
+}
+.card{
+    display: grid;
+    border-radius: .5rem;
+    background-color: #fff;
+    margin: 1.25rem 0 1.25rem 0;
+    box-shadow: 0 .25rem .5rem #b4b7b8;
+     width: 99%;
+    padding: 2rem;
+
+}
+
+a{
+text-decoration: none;
+}
+.student--box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    width: 100%;
+       
+}
+.title{
+    font-size: 1.5rem;
+}
+
+.prof-deatail{
+    font-weight: 400;
+    color: #4b4e4f;
+    font-size: 1.1rem;
+    padding-bottom: 1em;
+}
+.detail--number span{
+    font-weight: 400;
+
+    font-size: 1.1rem;
+}
+.detail--number{
+    font-size: 1rem;
 }

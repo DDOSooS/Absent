@@ -1,0 +1,27 @@
+              <div class="bg-white shadow-xl justify-center mx-auto mt-2 p-10 w-3/4">
+                <div class="box" *ngFor="let help of helper">
+                    <div class="description pt-3 pb-3 gap-3" *ngFor="let hel of help">
+                       <div class="item "  >
+                            <div class="date pt-3">
+                                <i class='bx bx-calendar text-3xl'></i> <span class="date--abs">Date :</span>
+                            </div>
+                            <div class="date mt-3" >
+                            <i class='bx bx-message-square-check text-3xl'></i> <span class="date--abs">Status :</span>
+                            </div>
+                       </div>
+                       <div class="item1">
+                            <div class="date ">
+                                <span class="date--abs text-black  font-bold"> {{hel.date}} </span>
+                            </div>
+                            <div class="date mt-3" >
+                                <button disabled  [ngClass]="hel.satatus?'bg-green-500' : 'bg-red-500' " class=" border-black text-black   mt-3 text-xl px-8 py-2 text-black  hover:border-black py-2 px-4 border  hover:border-transparent rounded">
+                                            {{hel.satatus?"justifier":"Non justifie"}}
+                                </button> 
+                            </div>
+                       </div>
+                  
+                    </div>
+                       <hr>
+                </div>
+            </div>
+            

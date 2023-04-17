@@ -1,5 +1,5 @@
 <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
-<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''">
+<div class="sidenav" [ngClass]="collapsed ? 'sidenav-collapsed': ''" [ngClass]="display ?'sidenav-display':''">
     <div class="logo-container">
         <button class="logo" (click)="toggleCollapse()"><img src="https://upload.wikimedia.org/wikipedia/en/8/8b/Cadi_Ayyad_University_Logo.png" alt=""></button>
         <div class="logo-text" @fadeInOut *ngIf="collapsed">FSSM</div>
@@ -15,7 +15,7 @@
                 routerLink="dashboard"
                 routerLinkActive="active"
             >
-               <i class='fal fa-home text-black  text-center text-2xl pl-2 ' ></i>
+               <i class='fal fa-home text-black  text-center text-2xl pl-3 ' ></i>
                 <span class="sidenav-link-text text-left text-black" @fadeInOut *ngIf="collapsed">
                   <a routerLink="dashboard">dashboard</a>
                 </span>
@@ -26,21 +26,19 @@
             <a class="sidenav-nav-link" routerLink="settings"
                 routerLinkActive="active"
             >
-               <i class='bx bxs-cog text-black text-center text-2xl pl-2 ' ></i>
+               <i class='bx bxs-cog text-black text-center text-2xl pl-3 ' ></i>
                 <span class="sidenav-link-text text-left text-black" @fadeInOut *ngIf="collapsed">
                   Settings
                 </span>
             </a>
         </li>
-        <li class="sidenav-nav-item"  >
-            <a class="sidenav-nav-link" 
-                routerLink="login"
-            >
-               <i class='bx bx-log-in text-black  text-center text-2xl pl-2' ></i>
+        <li class="sidenav-nav-item" (click)="logout()" >
+            
+               <i class='bx bx-log-in text-black  text-center text-2xl pl-3' ></i>
                 <span class="sidenav-link-text text-left text-black" @fadeInOut *ngIf="collapsed">
                   Logout
                 </span>
-            </a>
+            
         </li>
 
     </ul> 

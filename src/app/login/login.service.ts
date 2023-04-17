@@ -26,7 +26,7 @@ private usersUrl: string;
       this.users=data;
     })
     console.log(this.users)
-
+  
     
   }
 

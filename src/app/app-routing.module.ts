@@ -8,6 +8,7 @@ import { PagesComponent } from './telechargement/pages.component';
 import { SettingsComponent } from './settings/settings.component';
 import { StatisticsComponent } from './absence/statistics.component';
 import { LoginComponent } from './login/login.component';
+import { AbsenceListComponent } from './absence-list/absence-list.component';
 
 const routes: Routes = [
   {path: '', redirectTo: 'login', pathMatch: 'full'},
@@ -20,7 +21,8 @@ const routes: Routes = [
 
   {path: 'settings', component: SettingsComponent},
   
-  {path : 'logout', component:LoginComponent}
+  {path : 'logout', component:LoginComponent},
+  {path :'abdencelist/:id', component:AbsenceListComponent}
 ];
 
 @NgModule({

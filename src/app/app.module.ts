@@ -15,6 +15,8 @@ import { LoginComponent } from './login/login.component';
 import { ReactiveFormsModule } from '@angular/forms';
 import { LoginService } from './login/login.service';
 import { HttpClient, HttpClientModule } from '@angular/common/http';
+import { AbsenceListComponent } from './absence-list/absence-list.component' 
+import { MatSlideToggleModule } from '@angular/material/slide-toggle';
 
 @NgModule({
   declarations: [
@@ -25,7 +27,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     StatisticsComponent,
     PagesComponent,
     SettingsComponent,
-    LoginComponent
+    LoginComponent,
+    AbsenceListComponent
   ],
   imports: [
     BrowserModule,
@@ -33,6 +36,8 @@ import { HttpClient, HttpClientModule } from '@angular/common/http';
     AppRoutingModule,
     ReactiveFormsModule,
     HttpClientModule,
+    MatSlideToggleModule
+
   ],
   providers: [LoginService],
   bootstrap: [AppComponent]

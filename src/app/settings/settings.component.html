@@ -4,32 +4,32 @@
             <div class="relative py-3 sm:max-w-xl sm:mx-auto mt-6">
                 <div class="relative w-[600px] px-4 py-10 bg-white mx-8 md:mx-0 shadow rounded-3xl sm:p-10">
                 <div class="max-w-md mx-auto">
-                    <div class="flex items-center space-x-5">
-
-                    </div>
                     <div class="divide-y divide-gray-200">
-                    <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
+                        <form  [formGroup]="updateForm" #update="ngForm" (ngSubmit)="login()"  >
+                        <div class="py-8 text-base leading-6 space-y-4 text-gray-700 sm:text-lg sm:leading-7">
                         <div class="flex flex-col">
                             <h3 class="text-center text-3xl font-bold pb-4"> Profile</h3>
                         <label class="leading-loose">Email</label>
-                        <input type="text" class="px-6 py-4 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="abde.gher9@gmail.com" disabled>
+                        <input  type="text" class="px-6 py-4 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" [placeholder]="helper"  disabled>
                         </div>
                         <div class="flex flex-col">
                         <label class="leading-loose">New Password</label>
-                        <input type="password" class="px-4 py-4 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="new Password">
+                        <input formControlName="password"  type="password" class="px-4 py-4 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="new Password">
                         </div>
                         <div class="flex items-center space-x-4">
 
                         </div>
                         <div class="flex flex-col">
                         <label class="leading-loose">Confirm Password</label>
-                        <input type="password" class="px-4 py-4 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="confirm password">
+                        <input formControlName="" type="password" class="px-4 py-4 border focus:ring-gray-500 focus:border-gray-900 w-full sm:text-sm border-gray-300 rounded-md focus:outline-none text-gray-600" placeholder="confirm password">
                         </div>
-                    </div>
+                    </div>   
                     <div class="pt-4 flex items-center space-x-4">
-                        <button class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Edit</button>
-                        <a routerLink="dashboard" class="bg-yellow-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">dah</a>
+                        <button type="submit" class="bg-blue-500 flex justify-center items-center w-full text-white px-4 py-3 rounded-md focus:outline-none">Edit</button>
                     </div>
+                        </form>
+
+
                     </div>
                 </div>
                 </div>

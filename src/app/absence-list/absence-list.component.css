@@ -1,0 +1,47 @@
+
+a{
+text-decoration: none;
+}
+.student--box{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    gap: 3rem;
+    width: 100%;
+       
+}
+.title{
+    font-size: 1.5rem;
+}
+
+.prof-deatail{
+    font-weight: 400;
+    color: #4b4e4f;
+    font-size: 1.1rem;
+    padding-bottom: 1em;
+}
+.detail--number span{
+    font-weight: 700;
+
+    font-size: .9rem;
+}
+.detail--number{
+    font-size: 1rem;
+}
+.date--abs{
+    padding-top: 8px;
+    padding-left: 10px;
+    font-size: 1.2rem;
+}
+.date{
+    display: flex;
+    align-items: center;
+}
+.description{
+    display: flex;
+    justify-content: space-around;
+}
+.item1{
+ display: flex;
+ flex-direction: column;
+ align-items: end;
+}
